@@ -315,3 +315,41 @@ body {
   z-index: 2;
 }
 .cat-bottom-row { margin-top: auto; }
+.resolution-text-wrap {
+  position: relative;
+  width: 194px;
+  margin: 0 auto;
+  max-height: 220px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-right: 10px;
+  padding-bottom: 20px;
+  scrollbar-width: none;           /* Firefox */
+}
+.resolution-text-wrap::-webkit-scrollbar {
+  display: none;                   /* Chrome/Safari */
+}
+
+.scroll-thumb {
+  position: absolute;
+  width: 3px;
+  background: #C5CAE0;             /* было #FFCB6B */
+  border-radius: 3px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+#category-grid {
+  display: grid;
+  grid-template-columns: 150px 150px;
+  gap: 30px;
+  justify-content: center;
+  max-height: calc(100vh - 72px - 130px);
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-bottom: 40px;
+  scrollbar-width: none;
+}
+#category-grid::-webkit-scrollbar {
+  display: none;
+}
