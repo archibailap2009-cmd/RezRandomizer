@@ -115,6 +115,7 @@ function displayPick(pick) {
   mainResolutionEl.textContent = pick.text;
   mainInfoslideEl.textContent = pick.infoslide || "";
   copyIcon.innerHTML = copyIconSvg;
+  textWrap.scrollTop = 0;   
   updateLikeIcon();
   setTimeout(checkScrollIndicator, 50);
 }
