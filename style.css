@@ -101,6 +101,8 @@ body {
   line-height: 1.35;
   margin: 0;
   text-align: center;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 .info-slide-text {
@@ -304,6 +306,12 @@ body {
   width: 24px;
   height: 24px;
   position: relative;
+  html, body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  overscroll-behavior: none;
+}
   z-index: 2;
 }
 .cat-bottom-row { margin-top: auto; }
